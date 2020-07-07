@@ -1,3 +1,8 @@
+// File name: app.js
+// Author's name: Kuan-Wen Liu
+// Web site name: Kuan-Wen Liu Portfolio
+// file description: Add parse application/json
+
 'use strict';
 var debug = require('debug');
 var express = require('express');
