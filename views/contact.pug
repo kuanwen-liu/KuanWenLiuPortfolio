@@ -1,8 +1,31 @@
-extends layout
+extends partials/header
 
 block content
+
+  // File name: contact.pug
+  // Author's name: Kuan-Wen Liu
+  // Web site name: Kuan-Wen Liu Portfolio
+  // file description: Create a form for user to contact author by sending a message to author's gmail.
+  //                   Users should enter their gmail and password when they send a message.
+
   h1= title
-  p Welcome to #{title}
+  h5 Please enter your Gmail and password that you can contact me.
+
+  form(action="/contact" method="POST" role="form")
+    fieldset
+        label(for="email") Email:
+        input(name="email" type="email" placeholder="Your email" required)#email
+        br
+        label(for="password") Password:
+        input(name="password" type="password" placeholder="Your password" required)#name
+        br
+        label(for="message") Message:
+        textarea(name="message" placeholder="Enter your message here" rows="8" cols="49" required)#message
+        br
+        br
+        button(type="submit") Submit
+
+  
 
 
-  include footer
+  include partials/footer

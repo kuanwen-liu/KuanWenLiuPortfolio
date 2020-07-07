@@ -1,0 +1,30 @@
+// File name: header.pug
+// Author's name: Kuan-Wen Liu
+// Web site name: Kuan-Wen Liu Portfolio
+// file description: header links to main.css and bootstrap css
+
+doctype html
+html
+  head
+    title= title
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk", crossorigin="anonymous")
+    link(rel='stylesheet', href='/stylesheets/main.css')
+  body
+    // Use boostrap to create navigation bar
+    nav.navbar.navbar-expand.navbar-dark.bg-dark
+        div.container-fluid
+            div.navbar-header
+                a(href='/').navbar-brand Portfolio Project
+            ul.nav.navbar-nav.navbar-right
+                li.nav-item.active
+                    a.nav-link(href='/') Home
+                li.nav-item.active
+                    a.nav-link(href='about') About Me
+                li.nav-item.active
+                    a.nav-link(href='projects') Projects
+                li.nav-item.active
+                    a.nav-link(href='services') Services
+                li.nav-item.active
+                    a.nav-link(href='contact') Contact Me
+    div.container
+        block content

@@ -1,8 +1,30 @@
-extends layout
+extends partials/header
 
 block content
+
+  // File name: index.pug
+  // Author's name: Kuan-Wen Liu
+  // Web site name: Kuan-Wen Liu Portfolio
+  // file description: index is the home page. Add a bootstrap carousel
+
   h1= title
-  p Welcome to #{title}
+  h5 Web Developer
+  br
+  p Hello, my name is Kuan-Wen. I am a web developer.
+  br
+  div(data-ride="carousel").carousel.slide#carouselExampleControls
+    div.carousel-inner
+        div.carousel-item.active
+            img(src="https://undark.org/wp-content/uploads/2020/02/GettyImages-1199242002-1-scaled.jpg" alt="First").d-block.w-100
+        div.carousel-item
+            img(src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2018/08/kitten-440379.jpg?h=c8d00152&itok=1fdekAh2" alt="Second").d-block.w-100
+        div.carousel-item
+            img(src="https://static1.squarespace.com/static/5c2aec4b1137a6d8849debf1/5c424f63758d468c9afc1e76/5ebd9294bcb5ac291d741240/1589482747493/?format=1000w" alt="Third").d-block.w-100
+    a(href="#carouselExampleControls" role="button" data-slide="prev").carousel-control-prev
+    span(aria-hidden="true").carousel-control-prev-icon
+    span.sr-only Previous
+    a(href="#carouselExampleControls" role="button" data-slide="next").carousel-control-next
+    span(aria-hidden="true").carousel-control-next-icon
+    span.sr-only Next
 
-
-  include footer
+  include partials/footer

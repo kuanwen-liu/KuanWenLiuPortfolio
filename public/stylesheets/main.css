@@ -1,5 +1,44 @@
+/*
+    File name: main.css
+    Author's name: Kuan-Wen Liu
+    Web site name: Kuan-Wen Liu Portfolio
+    file description: Add some css. Make the make the pages more organization.
+*/
+
 body {
     padding: 0;
     margin: 0;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.container, footer {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 50px;
+    display: inline-block;
+    width: 500px;
+}
+
+label {
+    width: 100px;
+}
+
+input {
+    width: 80%;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    float: right;
+}
+
+footer {
+    text-align: left;
 }
